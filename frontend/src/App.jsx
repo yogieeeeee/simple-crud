@@ -29,7 +29,7 @@ import {Trash2, Edit, Plus, User} from "lucide-react"
 
 // API service
 const apiService = {
-  baseURL: "https://simple-crud-taupe.vercel.app",
+  baseURL: "http://localhost:3000",
 
   async getUsers() {
     const response = await fetch(this.baseURL)
