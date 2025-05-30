@@ -29,7 +29,7 @@ import {Trash2, Edit, Plus, User} from "lucide-react"
 
 // API service
 const apiService = {
-  baseURL: "http://localhost:3000",
+  baseURL: import.meta.env.VITE_API_ENDPOINT,
 
   async getUsers() {
     const response = await fetch(this.baseURL)
